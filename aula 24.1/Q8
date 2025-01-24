@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+	int soma (int num1, int num2) 
+	{
+		int resul;
+		resul = num1 + num2;
+		return (resul); }
+
+	int dobro (int nume1, int nume2) 
+	{
+		int resul1 ;
+		int resul2 ; 
+		resul1 = nume1 * 2 ;
+		resul2 = nume2 * 2 ;
+		return (resul1, resul2)  ;
+	}
+	
+	int main () {
+		int numer1 ;
+		int numer2 ;
+		int resul;
+		int resul1 ;
+		int resul2 ;
+		
+		printf ("Digite dois números");
+		scanf ("%f %f", &numer1, &numer2);
+		
+		resul = soma (numer1, numer2) ;
+		resul1 = dobro (numer1);
+		resul2 = dobro (numer2);
+		
+		printf("A soma dos seus numeros é %d", resul);
+		printf("o dobro do seu primerio número é %d", resul1);
+		printf("o dobro do seu segundo número é %d", resul2);
+		
+		return 0;
+	}	
